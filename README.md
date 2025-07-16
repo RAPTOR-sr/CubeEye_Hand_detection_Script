@@ -49,6 +49,36 @@ To record a dataset of detected hands:
    ```
 3. The recorded dataset will be saved in the `dataset/` directory by default.
 
+## Dataset Directory Structure
+
+The recorded dataset follows this directory structure:
+
+```
+dataset/
+├── depth/
+│   ├── hand_000001.png
+│   ├── hand_000002.png
+│   └── ...
+├── amplitude/
+│   ├── hand_000001.png
+│   ├── hand_000002.png
+│   └── ...
+├── pointcloud/
+│   ├── hand_000001.ply
+│   ├── hand_000002.ply
+│   └── ...
+└── metadata/
+    ├── hand_000001.json
+    ├── hand_000002.json
+    └── ...
+```
+
+Where:
+- `depth/`: Contains depth images of detected hands in PNG format
+- `amplitude/`: Contains amplitude/intensity images in PNG format
+- `pointcloud/`: Contains 3D point cloud data in PLY format
+- `metadata/`: Contains JSON files with detection metadata (bounding boxes, timestamps, etc.)
+
 ## Troubleshooting
 
 - If you encounter any issues, ensure that the CubeEye SDK is correctly installed and the device is properly connected.
@@ -60,10 +90,3 @@ To record a dataset of detected hands:
 - **Open3D**: For the point cloud visualization library.
 - **YOLO**: For the real-time object detection model.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-For any inquiries or issues, please contact [your-email@example.com](mailto:your-email@example.com).
