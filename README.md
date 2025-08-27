@@ -67,17 +67,14 @@ dataset/
 │   ├── hand_000001.ply
 │   ├── hand_000002.ply
 │   └── ...
-└── metadata/
-    ├── hand_000001.json
-    ├── hand_000002.json
-    └── ...
+└──
 ```
 
 Where:
 - `depth/`: Contains depth images of detected hands in PNG format
 - `amplitude/`: Contains amplitude/intensity images in PNG format
 - `pointcloud/`: Contains 3D point cloud data in PLY format
-- `metadata/`: Contains JSON files with detection metadata (bounding boxes, timestamps, etc.)
+
 
 ## Troubleshooting
 
